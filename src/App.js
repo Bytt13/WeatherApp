@@ -1,4 +1,4 @@
-import react, {useState, useEffect}from "react";
+import react, {useState, useEffect} from "react";
 import './App.css';
 import SearchBar from './components/SearchBar';
 import CurrWeather from './components/CurrWeather';
