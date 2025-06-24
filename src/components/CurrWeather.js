@@ -14,8 +14,8 @@ function CurrWeather({ data }){
                 <div className = "temperature">{Math.round(data.main.temp)}°C</div>       
                 <div className = "details">
                     <p className = "description">{data.weather[0].description}</p>
-                    <p>Feels Like: {Math.round(data.main.feels_Like)}°C</p>
-                    <p>HUmidity: {data.main.humidity}%</p>
+                    <p>Feels Like: {Math.round(data.main.feels_like)}°C</p>
+                    <p>Humidity: {data.main.humidity}%</p>
                 </div>      
             </div>
         </div>

@@ -41,13 +41,13 @@ function App(){
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(
             async (position) => {
-                const {lat1, lon1} = position.coords;
+                const {latitude, longitude} = position.coords;
                 setLoading(true);
                 setError(null);
 
                 try {
                     //search the city using coordinates, inverted process
-                    const cityResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat1}&lon=${lon1}&appid=${apiKey}&units=metric&lang=pt_br`);
+                    const cityResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric&lang=pt_br`);
                     const cityData = await cityResponse.json();
                     const initialCity = cityData.name;
 
