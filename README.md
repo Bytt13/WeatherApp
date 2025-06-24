@@ -138,7 +138,7 @@ Aqui está uma visão geral dos arquivos e pastas mais importantes:
 └── README.md              # Este arquivo que você está lendo :)
 ```
 
-## 📝 Como Usar
+## 📝 Como Usar + GIFs caso queira visualizar como funciona
 
 1.  Inicie o servidor (`npm start`).
 2.  A página abrirá com sua localização e dados de clima atuais.
