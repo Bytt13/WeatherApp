@@ -9,7 +9,7 @@
 
 Uma aplicação web simples e elegante para consulta de previsão do tempo, construída com React. Permite que os usuários vejam o tempo atual e a previsão para os próximos 5 dias de qualquer cidade do mundo, ou usem sua localização atual para uma consulta automática.
 
-![Placeholder para GIF ou Screenshot do App](https://via.placeholder.com/800x450.png?text=Adicione+um+GIF+do+seu+app+aqui!)
+<img width="1469" alt="Image" src="https://github.com/user-attachments/assets/14722f3d-d835-49f4-a51f-fa9cd9afc07b" />
 
 
 ## 📋 Índice
@@ -137,3 +137,12 @@ Aqui está uma visão geral dos arquivos e pastas mais importantes:
 ├── package.json           # O "RG" do projeto: define nome, scripts e dependências.
 └── README.md              # Este arquivo que você está lendo :)
 ```
+
+## 📝 Como Usar
+
+1.  Inicie o servidor (`npm start`).
+2.  A página abrirá com sua localização e dados de clima atuais
+3.  Para ver o clima de outra cidade, pesquise pelo nome da barra de busca, e clique em "Search"
+4.  Pronto! você já tem em suas mãos o clima de qualquer cidade do mundo pelos proximos 5 + dia atual.
+
+![Image](https://github.com/user-attachments/assets/879884e3-97a1-4fa2-a53d-7922ebf84f4e)
