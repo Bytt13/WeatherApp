@@ -10,7 +10,7 @@ function SearchBar({ onSearch }){
     };
 
     return (
-        <form onSubmit = {handleSubmit} className = "barra-busca">
+        <form onSubmit = {handleSubmit} className = "search-bar">
             <input
             type = "text"
             value = {input}

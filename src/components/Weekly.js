@@ -13,7 +13,7 @@ function Weekly({ data }){
     };
 
     return (
-        <div className = "Weekly">
+        <div className = "weekly">
             <h3>Next 5 days</h3>
             <div className = "days-container">
                 {nextDays.map((day, index) => (
