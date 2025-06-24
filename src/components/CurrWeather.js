@@ -3,6 +3,7 @@ import React from 'react';
 function CurrWeather({ data }){
     if(!data) return null;
 
+    //icon of the api
     const icon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 
     return (
@@ -18,7 +19,7 @@ function CurrWeather({ data }){
                 </div>      
             </div>
         </div>
-    );
+    ); //returning the page
 }
 
 export default CurrWeather;

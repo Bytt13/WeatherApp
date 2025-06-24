@@ -89,7 +89,7 @@ function App(){
                 )}
             </header>
         </div>
-    );
+    ); //returning the page
 }
 
 export default App;
