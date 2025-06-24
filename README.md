@@ -3,7 +3,7 @@
 Uma aplicação web simples e elegante para consulta de previsão do tempo, construída com React. Permite que os usuários vejam o tempo atual e a previsão para os próximos 5 dias de qualquer cidade do mundo, ou usem sua localização atual para uma consulta automática.
 
 ![Placeholder para GIF ou Screenshot do App](https://via.placeholder.com/800x450.png?text=Adicione+um+GIF+do+seu+app+aqui!)
-*(Dica: Grave um GIF curto da tela do seu aplicativo e adicione aqui para impressionar quem visitar seu repositório!)*
+
 
 ## 📋 Índice
 
