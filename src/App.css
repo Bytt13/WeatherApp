@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: #183060;
+    color: #e7e4e4;
 }
 
 h1 {
@@ -75,7 +75,7 @@ h1 {
 }
 
 .curr-weather {
-    background-color: #eaf5ff;
+    background-color: #c2cfdc;
     border: 1px solid #bde0ff;
     border-radius: 12px;
     padding: 20px;
@@ -130,7 +130,7 @@ h1 {
 }
 
 .day-card{
-    background-color: #f8f9fa;
+    background-color: #b9baba;
     border: 1px solid #dee2e6;
     border-radius: 12px;
     padding: 15px;

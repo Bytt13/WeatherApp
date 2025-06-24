@@ -26,11 +26,12 @@ function App(){
 
             //using the coordinates, we create a weekly data of the weather
             const { lat, lon } = currweatherData.coord;
-            const weekResponse = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly,alerts&appid=${apiKey}&units=metric&lang=pt-br`);
+            const weekResponse = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly,alerts&appid=${apiKey}&units=metric&lang=pt-br`);
+            if(!weekResponse.ok) throw new Error('The data of the week could not be found');
             const weekData = await weekResponse.json();
 
             //show the data
-            setWeatherData({current: currweatherData, week: weekData});
+            setWeatherData({current: currweatherData, forecast: weekData});
         } catch (error) {
             setError(error.message);
         } finally {
@@ -84,7 +85,7 @@ function App(){
                 {weatherData && (
                     <>
                         <CurrWeather data = {weatherData.current}/>
-                        <Weekly data = {weatherData.week.daily}/>
+                        <Weekly data = {weatherData.forecast.list}/>
                     </>
                 )}
             </header>
