@@ -143,6 +143,6 @@ Aqui está uma visão geral dos arquivos e pastas mais importantes:
 1.  Inicie o servidor (`npm start`).
 2.  A página abrirá com sua localização e dados de clima atuais.
 3.  Para ver o clima de outra cidade, pesquise pelo nome da barra de busca, e clique em "Search".
-4.  Pronto! você já tem em suas mãos o clima de qualquer cidade do mundo pelos proximos 5 + dia atual.
+4.  Pronto! você já tem em suas mãos o clima de qualquer cidade do mundo pelos proximos 5 dias + dia atual.
 
 ![Image](https://github.com/user-attachments/assets/879884e3-97a1-4fa2-a53d-7922ebf84f4e)
