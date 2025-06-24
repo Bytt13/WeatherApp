@@ -1,5 +1,12 @@
 # 🌦️ React Weather App
 
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+
 Uma aplicação web simples e elegante para consulta de previsão do tempo, construída com React. Permite que os usuários vejam o tempo atual e a previsão para os próximos 5 dias de qualquer cidade do mundo, ou usem sua localização atual para uma consulta automática.
 
 ![Placeholder para GIF ou Screenshot do App](https://via.placeholder.com/800x450.png?text=Adicione+um+GIF+do+seu+app+aqui!)
@@ -107,3 +114,26 @@ A arquitetura do projeto é baseada em componentes, o que facilita a manutençã
 -   **`Weekly.js`**: Funciona como um **almanaque**, mostrando a previsão para os próximos dias. Ele recebe a lista de previsões da API (que vem em intervalos de 3 horas) e filtra para mostrar apenas a previsão do tempo para o meio-dia de cada dia, simplificando a visualização.
 
 -   **`public/index.html` e `src/index.js`**: São a porta de entrada da aplicação. O `index.js` pega o componente principal `App` e o renderiza dentro da `div` com `id="root"` no arquivo `index.html`, efetivamente "ligando" a aplicação React na página web.
+
+# 📂 Estrutura do Projeto
+
+Aqui está uma visão geral dos arquivos e pastas mais importantes:
+
+```text
+/
+├── public/                # Pasta dos "arquivos estáticos" como o HTML principal e ícones.
+│   ├── index.html         # O esqueleto HTML onde a aplicação React é injetada.
+│   └── manifest.json      # Informações do app para instalação (PWA).
+├── src/                   # O "coração do código" da aplicação.
+│   ├── components/        # "Peças de Lego" reutilizáveis da interface.
+│   │   ├── CurrWeather.js # Componente que exibe o tempo atual.
+│   │   ├── SearchBar.js   # Componente da barra de busca.
+│   │   └── Weekly.js      # Componente que mostra a previsão dos próximos dias.
+│   ├── App.js             # O "cérebro" da aplicação, que une todos os componentes e gerencia os dados.
+│   ├── App.css            # Estilos específicos do componente App.
+│   ├── index.js           # Ponto de entrada que renderiza a aplicação na página.
+│   └── index.css          # Estilos globais, como o fundo gradiente.
+├── .gitignore             # Diz ao Git quais arquivos e pastas ignorar.
+├── package.json           # O "RG" do projeto: define nome, scripts e dependências.
+└── README.md              # Este arquivo que você está lendo :)
+```
