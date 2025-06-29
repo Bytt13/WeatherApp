@@ -27,7 +27,7 @@ function Weekly({ data }){
                 ))}
             </div>
         </div>
-    );
+    ); //returning the page
 }
 
 export default Weekly;
