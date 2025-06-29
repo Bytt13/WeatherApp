@@ -40,7 +40,7 @@ A simple and elegant web application for checking the weather forecast, built wi
 
 ## 🚀 Getting Started
 
-[Click here if you want to see the site](https://weatherapp-3y0.pages.dev/)
+[Click here if you want to see the site](https://weatherapp-3y0.pages.dev/) (Allow the use of your location)
 
 
 Follow the steps below to get a copy of the project running on your local machine.
