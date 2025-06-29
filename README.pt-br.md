@@ -50,12 +50,12 @@ Você vai precisar ter o [Node.js](https://nodejs.org/en/) (que já vem com o np
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    git clone [https://github.com/Bytt13/WeatherApp.git](https://github.com/Bytt13/WeatherApp.git)
     ```
 
 2.  **Navegue até a pasta do projeto:**
     ```bash
-    cd nome-da-pasta-do-projeto
+    cd WeatherApp
     ```
 
 3.  **Instale as dependências:**
