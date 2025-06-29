@@ -50,7 +50,7 @@ You will need to have [Node.js](https://nodejs.org/en/) (which includes npm) ins
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repository.git](https://github.com/your-username/your-repository.git)
+    git clone [https://github.com/Bytt13/WeatherApp.git](https://github.com/Bytt13/WeatherApp.git)
     ```
 
 2.  **Navigate to the project folder:**
