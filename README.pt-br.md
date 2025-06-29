@@ -40,6 +40,9 @@ Uma aplicação web simples e elegante para consulta de previsão do tempo, cons
 
 ## 🚀 Como Executar o Projeto
 
+[Clique aqui para ir diretamente ao site](weatherapp-3y0.pages.dev)(permita o uso da sua localização)
+
+
 Siga os passos abaixo para ter uma cópia do projeto rodando na sua máquina local.
 
 ### Pré-requisitos
@@ -50,7 +53,7 @@ Você vai precisar ter o [Node.js](https://nodejs.org/en/) (que já vem com o np
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/Bytt13/WeatherApp.git](https://github.com/Bytt13/WeatherApp.git)
+    git clone https://github.com/Bytt13/WeatherApp.git
     ```
 
 2.  **Navegue até a pasta do projeto:**
