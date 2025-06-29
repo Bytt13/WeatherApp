@@ -138,6 +138,46 @@ Aqui está uma visão geral dos arquivos e pastas mais importantes:
 └── README.md              # Este arquivo que você está lendo :)
 ```
 
+## 🔩 Endpoints da API (OpenWeatherMap)
+
+A aplicação utiliza 3 endpoints diferentes para obter todas as informações necessárias. Uma chave de API (`apiKey`) é necessária para todas as chamadas.
+
+### 1. Buscar Clima Atual por Nome da Cidade
+
+- `GET https://api.openweathermap.org/data/2.5/weather`
+  - **Descrição:** Usado na barra de pesquisa para obter os dados do clima atual da cidade que o usuário digitou.
+  - **Parâmetros da URL:**
+    - `q`: O nome da cidade (ex: `Sao Paulo`).
+    - `appid`: Sua chave de API.
+    - `units`: `metric` (para obter a temperatura em Celsius).
+    - `lang`: `pt_br` (para receber as descrições em português).
+  - **Resposta (JSON):** Um objeto contendo detalhes como temperatura atual, sensação térmica, umidade, velocidade do vento, ícone do clima e as coordenadas geográficas (`lat`, `lon`) da cidade.
+
+### 2. Buscar Previsão do Tempo por Coordenadas
+
+- `GET https://api.openweathermap.org/data/2.5/forecast`
+  - **Descrição:** Após encontrar a cidade, este endpoint é chamado usando as coordenadas obtidas no passo anterior para buscar a previsão do tempo para os próximos 5 dias.
+  - **Parâmetros da URL:**
+    - `lat`: A latitude da cidade.
+    - `lon`: A longitude da cidade.
+    - `appid`: Sua chave de API.
+    - `units`: `metric`.
+    - `lang`: `pt_br`.
+  - **Resposta (JSON):** Um objeto com uma lista (`list`) de previsões, onde cada item representa o clima para um intervalo de 3 horas futuro.
+
+### 3. Buscar Nome da Cidade por Coordenadas (Geolocalização)
+
+- `GET https://api.openweathermap.org/data/2.5/weather`
+  - **Descrição:** Este é o primeiro endpoint a ser chamado quando a página carrega. Ele usa as coordenadas de latitude e longitude fornecidas pelo navegador do usuário para descobrir o nome da cidade atual.
+  - **Parâmetros da URL:**
+    - `lat`: A latitude obtida do navegador.
+    - `lon`: A longitude obtida do navegador.
+    - `appid`: Sua chave de API.
+    - `units`: `metric`.
+    - `lang`: `pt_br`.
+  - **Resposta (JSON):** O mesmo formato do Endpoint 1. A aplicação extrai o campo `name` da resposta para saber o nome da cidade e, em seguida, inicia a busca completa do clima para aquela cidade.
+
+
 ## 📝 Como Usar + GIFs caso queira visualizar como funciona
 
 1.  Inicie o servidor (`npm start`).
