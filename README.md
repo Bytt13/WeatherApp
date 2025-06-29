@@ -55,7 +55,7 @@ You will need to have [Node.js](https://nodejs.org/en/) (which includes npm) ins
 
 2.  **Navigate to the project folder:**
     ```bash
-    cd project-folder-name
+    cd WeatherApp
     ```
 
 3.  **Install the dependencies:**
